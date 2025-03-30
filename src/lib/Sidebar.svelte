@@ -14,7 +14,7 @@
         min-width: min-content;
         width: min-content;
         padding: 20px;
-        background-color: rgba(255, 255, 255, 0.9);
+        background-color: rgba(255, 255, 255, 0.7);
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
         min-height: min-content;
         max-height: calc(100vh - 40px);

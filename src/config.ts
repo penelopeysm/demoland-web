@@ -308,7 +308,7 @@ const signatures = [
 /* --------------------------------- */
 
 // The base URL of the GitHub Pages site where the web app is hosted.
-const baseUrl = "https://urban-analytics-technology-platform.github.io/demoland-web";
+const baseUrl = "https://pysm.dev/demoland-web";
 
 // This is the endpoint to send POST requests to in order to calculate
 // indicators for a new scenario. See the project book

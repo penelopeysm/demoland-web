@@ -31,60 +31,21 @@
 <Welcome bind:welcomeVisible />
 <Sidebar>
     <div class="sidebar-contents">
-        <h1 class="title">{config.areaName} development scenario modelling</h1>
-
-        <p>
-            Explore a modelled impact of various development scenarios in {config.areaName}
-            on four indicators of quality of life.
-
-            <Tooltip --width="max-content" --transformy="35px">
-                <button
-                    slot="content"
-                    id="show-welcome"
-                    on:click={() => (welcomeVisible = true)}
-                    ><img
-                        src={showWelcomeIcon}
-                        alt="Show welcome screen again"
-                    /></button
-                >
-                <span slot="description">Show welcome screen</span>
-            </Tooltip>
-        </p>
-
-        <p>
-            All indicator values are linearly scaled such that the baseline
-            ranges from 0 to 100.
-        </p>
-
-        <div id="tabs-and-content">
-            <Tabs bind:selectedTab />
-
-            <div class="tab-content">
-                {#if selectedTab === "choose"}
-                    <Choose on:changeScenario />
-                {:else if selectedTab === "create"}
-                    <Create
-                        on:changeScenario={() => {
-                            $compareScenarioName = null;
-                            dispatch("changeScenario");
-                        }}
-                        on:import={handleImportEvent}
-                        on:changesUpdated={() => {
-                            dispatch("updateBoundaryLayer");
-                        }}
-                    />
-                {:else if selectedTab === "import"}
-                    <Import on:import={handleImportEvent} />
-                {/if}
-            </div>
-        </div>
+        <h1 class="yuuuuuuge">A</h1>
     </div>
 </Sidebar>
 
 <style>
     div.sidebar-contents {
         /* This controls the total width of the left sidebar. */
-        width: 280px;
+    }
+
+    h1.yuuuuuuge {
+        font-size: 2000%;
+        font-weight: 700;
+        margin: 40px 80px;
+        text-align: center;
+        font-family: "Dancing Script", cursive;
     }
 
     h1.title {
