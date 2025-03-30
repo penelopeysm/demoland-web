@@ -41,7 +41,7 @@
     }
 
     h1.yuuuuuuge {
-        font-size: 2000%;
+        font-size: 4000%;
         font-weight: 700;
         margin: 40px 80px;
         text-align: center;
